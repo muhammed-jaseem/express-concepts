@@ -1,5 +1,3 @@
-const { version } = require("react");
-
 const urlVersioning = (version) => (req, res, next) => {
   if (req.path.startsWith(`/api/${version}`)) {
     next();
