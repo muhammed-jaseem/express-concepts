@@ -8,7 +8,7 @@ const requestLogger = (req, res, next) => {
 };
 
 const addTimeStamp = (req, res, next) => {
-  req.timestamp = new Date.toISOString();
+  req.timestamp = new Date().toISOString();
   next();
 };
 
